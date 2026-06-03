@@ -9,10 +9,10 @@ const mixpanel = Mixpanel.init(
 app.get('/go', (req, res) => {
   mixpanel.track('$campaign_link_click', {
     distinct_id: req.ip,
-    url: 'https://lakhianilaws.com/?vdlztpxt',
+    url: 'https://lakhianilaws.com/?vdlztpxt&email=',
     $insert_id: `click-${Date.now()}`,
   });
-res.redirect(302, 'https://lakhianilaws.com/?vdlztpxt&email=');
+  res.redirect(302, 'https://lakhianilaws.com/?vdlztpxt&email=');
 });
 
 const PORT = process.env.PORT || 3000;
