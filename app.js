@@ -12,7 +12,7 @@ app.get('/go', (req, res) => {
     url: 'https://lakhianilaws.com/?vdlztpxt',
     $insert_id: `click-${Date.now()}`,
   });
-  res.redirect(302, 'https://lakhianilaws.com/?vdlztpxt');
+res.redirect(302, 'https://lakhianilaws.com/?vdlztpxt&email=');
 });
 
 const PORT = process.env.PORT || 3000;
